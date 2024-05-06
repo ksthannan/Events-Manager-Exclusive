@@ -135,13 +135,6 @@ class Calendar {
                 $query->the_post();
 
                 $e_date = get_post_meta( get_the_ID(), '_event_date', true );
-                $event = array(
-                    'id' => get_the_ID(),
-                    'title' => get_the_title(),
-                    'link' => get_the_permalink(),
-                    'description' => the_content(),
-                    'date' => $e_date
-                );
                 $event_info[$e_date] = array();
                 // array_push($event_dates, $e_date);
             }
@@ -153,7 +146,7 @@ class Calendar {
                     'id' => get_the_ID(),
                     'title' => get_the_title(),
                     'link' => get_the_permalink(),
-                    'description' => the_content(),
+                    'description' => get_the_excerpt(),
                     'date' => $e_date
                 );
 
@@ -161,12 +154,6 @@ class Calendar {
             }
         }
 
-        // echo '<pre>';
-        // var_dump(date( '2024-06-01', strtotime( 'first day of this month' ) ));
-        // var_dump(date( '2024-06-t', strtotime( 'last day of this month' ) ));
-        // var_dump($event_info);
-        // echo '</pre>';
-        // exit();
 
         $event_cal = '';
         $event_cal .= '<li id="li-'.$this->currentDate.'" class="'.($cellNumber%7==1?' start ':($cellNumber%7==0?' end ':' ')).

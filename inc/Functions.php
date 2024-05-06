@@ -218,10 +218,12 @@ namespace EvmeManager\Events;
                     </div>
                 </div>
             <?php 
+            $evme_content = ob_get_clean();
+            $content = $evme_content . $content;
         }
-        $evme_content = ob_get_clean();
-        $content = $evme_content . $content;
+
         return $content;
+        
     }
 
  }
