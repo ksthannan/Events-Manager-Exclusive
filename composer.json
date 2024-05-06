@@ -1,0 +1,20 @@
+{
+    "name": "evme-manager/events",
+    "description": "Event Manager Exclusive plugin for managing exclusive events.",
+    "license": "GPLv2",
+    "autoload": {
+        "psr-4": {
+            "EvmeManager\\Events\\": "inc/"
+        },
+        "files": [
+            "inc/Functions.php"
+        ]
+    },
+    "authors": [
+        {
+            "name": "ksthannan",
+            "email": "abdulhannan.kum@gmail.com"
+        }
+    ],
+    "require": {}
+}

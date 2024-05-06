@@ -1,0 +1,111 @@
+#calendar {
+    width: 1000px;
+    overflow: hidden;
+}
+table.evme_table td {
+    border: 1px solid #ddd;
+    text-align: center;
+    width: 150px;
+    height: 100px;
+    position: relative;
+}
+ul.dates li span {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    z-index: 1;
+    font-size: 14px;
+    font-weight: 600;
+}
+table.evme_table th {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+table.evme_table caption {
+    padding: 20px;
+    font-size: 22px;
+    font-weight: 500;
+}
+table.evme_table {
+    border: 1px solid #ddd;
+}
+.evme_cal_wrapper {
+    padding: 100px 30px;
+}
+.evme_events_exist {
+    display: block;
+    overflow: hidden;
+    padding: 10px 0;
+    text-align: left;
+}
+.evme_events_exist a {
+    font-size: 12px;
+    display: block;
+    background: #3788D8;
+    color: #fff;
+    padding: 2px 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-bottom: 2px;
+}
+.evme_events_exist a:hover {
+    opacity: 0.9;
+}
+
+/**
+Calendar CSS
+*/
+ul.evme_label {
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 0;
+}
+
+ul.evme_label li {
+    display: inline-block;
+    float: left;
+    padding: 10px 20px;
+    border: 2px solid #ddd;
+    width: 100px;
+    flex: 1 0 calc(100% / 7);
+    box-sizing: border-box;
+    margin-bottom: 0;
+}
+
+ul.dates li {
+    display: inline-block;
+    float: left;
+    padding: 25px 0px;
+    width: 150px;
+    height: 100px;
+    border: 2px solid #ddd;
+    position: relative;
+    flex: 1 0 calc(100% / 7);
+    box-sizing: border-box;
+    margin-bottom: 0;
+}
+.header span {
+    font-size: 20px;
+    line-height: normal;
+    font-weight: 500;
+}
+ul.dates {
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header a.next, .header a.prev {
+    padding: 10px;
+}
